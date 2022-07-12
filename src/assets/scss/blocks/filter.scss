@@ -1,0 +1,228 @@
+.filter__btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+
+    transform: translateY(-50%);
+
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.filter__text {
+    margin-left: 10px;
+
+    font-size: var(--regular-text);
+    vertical-align: middle;
+    color: $black;
+    text-transform: uppercase;
+    transition: color 0.25s ease-out;
+
+    @include breakpoint($mobile-sm) {
+        display: none;
+    }
+
+    &:hover {
+        color: $purple;
+    }
+}
+
+.filter__menu {
+    display: none;
+    padding: 15px 15px 70px;
+    margin-top: 5px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+
+    background: $white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.28);
+
+    &.show {
+        display: block;
+    }
+}
+
+.filter__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter__row--color {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7.5px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.filter__link {
+    margin: 0 8.5px;
+
+    font-size: 1.2rem;
+    color: $black;
+    text-decoration: none;
+    line-height: 1.1;
+
+    @include breakpoint($mobile-sm) {
+        font-size: 1rem;
+    }
+
+    &.active {
+        color: $purple;
+    }
+
+    &--clear {
+        margin: 0;
+
+        font-size: var(--regular-text);
+        color: $purple;
+    }
+
+    &--tabs {
+        margin: 0;
+        padding: 5px;
+
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        border: 1px solid transparent;
+
+        &.active {
+            color: $purple;
+            border: 1px solid $purple;
+        }
+    }
+}
+
+.filter__title {
+    margin-bottom: 8px;
+
+    font-size: 1.6rem;
+    color: $black;
+}
+
+.filter-color__btn {
+    position: relative;
+    width: 29px;
+    height: 29px;
+    margin: 4px 7.5px;
+
+    font-size: 0;
+    color: transparent;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+
+    &:before {
+        display: none;
+        content: "";
+        width: 23px;
+        height: 23px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+
+        transform: translate3d(-50%, -50%, 0);
+        background-color: transparent;
+        border: 3px solid $white;
+        border-radius: 50%;
+    }
+
+    &.active {
+        &:before {
+            display: block;
+        }
+    }
+
+    &--green {
+        --bg-color-filter: #219653;
+        background: var(--bg-color-filter);
+    }
+
+    &--red {
+        --bg-color-filter: #EB001B;
+        background: var(--bg-color-filter);
+    }
+
+    &--purple {
+        --bg-color-filter: #C12C99;
+        background: var(--bg-color-filter);
+    }
+
+    &--pink {
+        --bg-color-filter: #FFD4DE;
+        background: var(--bg-color-filter);
+    }
+
+    &--orange {
+        --bg-color-filter: #FFB801;
+        background: var(--bg-color-filter);
+    }
+
+    &--yellow {
+        --bg-color-filter: #E5E861;
+        background: var(--bg-color-filter);
+    }
+
+    &--yellow-light {
+        --bg-color-filter: #FADFAB;
+        background: var(--bg-color-filter);
+    }
+
+    &--blue {
+        --bg-color-filter: #088CCB;
+        background: var(--bg-color-filter);
+    }
+
+    &--black {
+        --bg-color-filter: #131313;
+        background: var(--bg-color-filter);
+    }
+
+    &--white {
+        --bg-color-filter: #FFFFFF;
+        border: 1px solid #DFDFDF;
+        background: var(--bg-color-filter);
+    }
+}
+
+.filter-color__picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-webkit-color-swatch {
+        border-radius: 50%;
+        background: conic-gradient(from 180deg at 50% 50%, #FF0000 0deg, #F3CC00 56.25deg, #7EF36B 116.25deg, #178BF7 206.25deg, #FB36DB 288.75deg, rgba(220, 0, 79, 0) 360deg);
+        border: none;
+    }
+
+    &--last {
+        &::-webkit-color-swatch {
+            background: conic-gradient(from 180deg at 50% 50%, #FAB9AB 0deg, #FAE4AB 52.5deg, #E5FAAB 108.75deg, #ABFAE7 210deg, #ACABFA 286.87deg, rgba(250, 171, 185, 0) 360deg);
+
+        }
+    }
+}
+
+.filter__close {
+    width: 10px;
+    height: 10px;
+
+    background: url("../images/icons/close-icon.svg") center no-repeat;
+    font-size: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

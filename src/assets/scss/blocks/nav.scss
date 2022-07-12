@@ -1,0 +1,25 @@
+.navbar {
+    background-color: $light-pink;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.nav-link {
+    margin: 0 20px;
+
+    color: $black;
+    font-size: var(--regular-text);
+    transition: color 0.1s ease-out;
+
+    &:hover {
+        color: $purple;
+    }
+}
+
+.collapse {
+    &:not(.show) {
+        display: none;
+    }
+}

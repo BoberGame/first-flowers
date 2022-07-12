@@ -1,0 +1,49 @@
+.breadcrumb-list {
+    display: flex;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+
+    @include breakpoint($mobile-sm) {
+        margin-right: 26px;
+    }
+
+    &:not(:last-of-type)::after {
+        width: 8px;
+        height: 8px;
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 115%;
+        z-index: 1;
+
+        border: solid rgba(33, 38, 48, 0.51);
+        border-width: 0 2px 2px 0;
+        transform: rotate(-45deg) translateY(-50%);
+    }
+}
+
+.breadcrumb-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $purple;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    @include breakpoint($mobile-sm) {
+        font-size: 1rem;
+    }
+
+    &.active {
+        color: $black;
+    }
+}

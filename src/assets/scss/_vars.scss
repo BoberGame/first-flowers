@@ -1,0 +1,52 @@
+$white: #fff;
+$black: #3C3A3A;
+$gray: #858585;
+$light-gray: #E5E5E5;
+$footer: #D1D0D0;
+$pink: #FF3366;
+$light-pink: #FFD4DE;
+$green: #219653;
+$purple: #C5528B;
+
+$tablet: 991px;
+$mobile: 768px;
+$mobile-sm: 576px;
+
+
+/* Custom */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1408px
+);
+
+
+/* Padding 15px */
+$container-padding-x: $grid-gutter-width * 1.06;
+
+/* Carousel */
+$carousel-control-icon-width: 40px;
+
+$carousel-control-prev-icon-bg: url("../images/icons/arrow__left-icon.svg");
+$carousel-control-next-icon-bg: url("../images/icons/arrow__left-icon.svg");
+
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+
+/* Progress Bar */
+$progress-height: 3px;
+$progress-bg: $light-gray;
+$progress-border-radius: var(--border-radius-main);
+$progress-bar-bg: $purple;

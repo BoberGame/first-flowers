@@ -1,0 +1,48 @@
+/* Font-face SF Pro Display */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Thin'), local('SFProDisplay-Thin'),
+        url('../fonts/SFProDisplay-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Light'), local('SFProDisplay-Light'),
+        url('../fonts/SFProDisplay-Light.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

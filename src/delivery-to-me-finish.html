@@ -1,0 +1,64 @@
+---
+layout: default
+title: Оформление заказа
+---
+<!-- Breadcrumb -->
+<div class="breadcrumb my-4">
+    <div class="container">
+        <ul class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <button class="breadcrumb-link btn" type="button" data-back>Вернуться назад</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- Delivery -->
+<section class="delivery">
+    <div class="container">
+        <div class="row delivery-wrapper">
+            <div class="delivery-left col-lg-6">
+                <h2 class="delivery-title">Ваш заказ</h2>
+                <h3 class="delivery-subtitle delivery-subtitle--purple">Поздравляем!</h3>
+                <div class="delivery-text">Заказ оформлен. Ваш номер заказа <a href="#" id="orderNumber">453885</a>. Сохраните его, он
+                    необходим для получения информации о заказе.</div>
+                <div class="col-12 col-md-4">
+                    <a class="btn delivery-form__btn" href="index.html" id="orderFinishBtn">НА ГЛАВНУЮ</a>
+                </div>
+
+            </div><!-- /.delivery-left -->
+
+            <div class="delivery-right col-lg-5 offset-lg-1">
+                <h2 class="delivery__title delivery__title--right">Итого:</h2>
+                <div class="delivery-right__header d-flex justify-content-between">
+                    <span class="delivery-right__subtitle delivery-right__count">1 товар</span>
+                    <span class="delivery-right__subtitle delivery-right__subtitle--price" id="deliveryTotalPrice">3590 ₽</span>
+                </div>
+
+                <div class="delivery-preview">
+                    <div class="delivery-preview__wrapper">
+                        <img class="delivery-preview__img" src="assets/images/flower__img-1.jpg" alt="">
+                    </div>
+                    <span class="delivery-right__subtitle">Букет из пионов</span>
+                </div>
+                <div class="delivery-total">
+                    <h2 class="delivery__title delivery__title--right">Итого с учетом скидок:</h2>
+                    <div class="delivery-total__item">
+                        <span class="delivery-right__subtitle delivery-right__count">1 товар</span>
+                        <span class="delivery-right__subtitle delivery-right__subtitle--price" id="deliveryStartingPrice">3590 ₽</span>
+                    </div>
+                    <div class="delivery-total__item">
+                        <span class="delivery-right__subtitle">Доставка</span>
+                        <span class="delivery-right__subtitle delivery-right__subtitle--purple delivery-right__subtitle--semi">бесплатно</span>
+                    </div>
+                    <div class="delivery-total__item">
+                        <span class="delivery-right__subtitle">К оплате</span>
+                        <span class="delivery-right__subtitle delivery-right__subtitle--price" id="deliveryCalculatedPrice">3590 ₽</span>
+                    </div>
+                </div>
+            </div><!-- /.delivery-right -->
+        </div><!-- /.delivery-wrapper -->
+    </div><!-- /.container -->
+</section><!-- /.delivery -->

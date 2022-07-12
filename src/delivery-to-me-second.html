@@ -1,0 +1,115 @@
+---
+layout: default
+title: Оформление заказа
+---
+
+<!-- Breadcrumb -->
+<div class="breadcrumb my-4">
+    <div class="container">
+        <ul class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <button class="breadcrumb-link btn" type="button" data-back>Вернуться назад</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- Delivery -->
+<section class="delivery">
+    <div class="container">
+        <div class="delivery__wrapper row">
+            <div class="delivery__left col-lg-6">
+                <h2 class="delivery__title">Оформление заказа</h2>
+                <h3 class="delivery__subtitle">Уточните детали доставки</h3>
+
+                <form class="delivery-form" id="orderFormSecond" action="delivery-to-me-third.html" method="get">
+                    <div class="row">
+                        <label class="delivery-form__label col-md-6" for="deliveryInputName">
+                            Адрес доставки (улица, дом): <b>*</b>
+                            <input class="delivery-form__input" id="deliveryInputName" name="deliveryInputAddress" type="text" required>
+                        </label>
+                        <label class="delivery-form__label col-md-6" for="deliveryInputTel">
+                            Дата доставки <b>*</b>
+                            <input class="delivery-form__input" id="deliveryInputTel" name="deliveryInputDateOrder" type="date" required>
+                        </label>
+                    </div>
+                    <div class="row mb-5">
+                        <label class="delivery-form__label col-md-6" for="deliveryInputName">
+                            Дополнительная информация:
+                            <textarea class="delivery-form__input  delivery-form__input--textarea" name="deliveryInputAdditional" id="deliveryTextarea"></textarea>
+                        </label>
+                        <label class="delivery-form__label col-md-6">
+                            Время доставки <b>*</b>
+                            <div class="select delivery-form__input">
+                                <div class="select__header d-flex">
+                                    <span class="select__current">12:00-13:00</span>
+                                </div>
+                                <div class="select__overlay" data-select="true"></div>
+                                <div class="select__body">
+                                    <div class="select__body__title">Выберите время доставки:</div>
+                                    <div class="select__body__subtitle">в ближайшее время</div>
+                                    <div class="select__item">12:00-13:00</div>
+                                    <div class="select__item">13:00-14:00</div>
+                                    <div class="select__item">14:00-15:00</div>
+                                    <div class="select__item">15:00-16:00</div>
+                                    <div class="select__item">16:00-17:00</div>
+                                    <div class="select__item">17:00-18:00</div>
+                                    <div class="select__item">18:00-19:00</div>
+                                    <div class="select__item">19:00-20:00</div>
+                                </div>
+                            </div>
+                        </label>
+                    </div><!-- /.row -->
+                    <div class="row">
+                        <div class="col-2">
+                            <h4 class="delivery-progress__title">2/3</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 66%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4 offset-4 offset-xl-6 row gx-2">
+                            <div class="col-6">
+                                <button class="btn delivery-form__btn" type="button" data-back>назад</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn delivery-form__btn delivery-form__btn--submit" type="submit" id="submitOrderSec">ДАЛЕЕ</button>
+                            </div>
+                        </div>
+                    </div>
+                </form><!-- /.delivery-form -->
+            </div><!-- /.delivery-left -->
+
+            <div class="delivery-right col-lg-5 offset-lg-1">
+                <h2 class="delivery__title delivery__title--right">Итого:</h2>
+                <div class="delivery-right__header d-flex justify-content-between">
+                    <span class="delivery-right__subtitle delivery-right__count">1 товар</span>
+                    <span class="delivery-right__subtitle delivery-right__subtitle--price" id="deliveryTotalPrice">3590 ₽</span>
+                </div>
+
+                <div class="delivery-preview">
+                    <div class="delivery-preview__wrapper">
+                        <img class="delivery-preview__img" src="assets/images/flower__img-1.jpg" alt="">
+                    </div>
+                    <span class="delivery-right__subtitle">Букет из пионов</span>
+                </div>
+                <div class="delivery-total">
+                    <h2 class="delivery__title delivery__title--right">Итого с учетом скидок:</h2>
+                    <div class="delivery-total__item">
+                        <span class="delivery-right__subtitle delivery-right__count">1 товар</span>
+                        <span class="delivery-right__subtitle delivery-right__subtitle--price" id="deliveryStartingPrice">3590 ₽</span>
+                    </div>
+                    <div class="delivery-total__item">
+                        <span class="delivery-right__subtitle">Доставка</span>
+                        <span class="delivery-right__subtitle delivery-right__subtitle--purple delivery-right__subtitle--semi">бесплатно</span>
+                    </div>
+                    <div class="delivery-total__item">
+                        <span class="delivery-right__subtitle">К оплате</span>
+                        <span class="delivery-right__subtitle delivery-right__subtitle--price" id="deliveryCalculatedPrice">3590 ₽</span>
+                    </div>
+                </div>
+            </div><!-- /.delivery-right -->
+        </div><!-- /.delivery-wrapper -->
+    </div><!-- /.container -->
+</section><!-- /.delivery -->

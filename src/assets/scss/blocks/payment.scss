@@ -1,0 +1,54 @@
+.payment-item {
+    position: relative;
+    margin-bottom: 16px;
+
+    border: 2px solid $gray;
+    border-radius: var(--border-radius-main);
+    cursor: pointer;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
+
+
+    &__label {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+
+        font-size: var(--regular-text);
+        color: $black;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 19px;
+            height: 19px;
+
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            z-index: 2;
+
+            border-radius: 5px;
+            background: $green url("../images/icons/checkbox-icon.svg") center no-repeat;
+            opacity: 0;
+        }
+    }
+
+    &__input {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: absolute;
+
+        &:checked + .payment-item__label:after {
+            opacity: 1;
+        }
+    }
+}
+
+.payment-logo {
+    margin-right: 16px;
+}

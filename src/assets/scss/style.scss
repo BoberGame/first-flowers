@@ -1,0 +1,74 @@
+@import "fonts";
+@import "mixins";
+
+/* Bootstrap */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+@import "vars";
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/utilities/api";
+
+
+
+:root {
+    font-size: 62.5%;
+    --regular-text: 1.8rem;
+    --userfont: "SF Pro Display";
+    --systemfont: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+    --border-radius-main: 15px;
+    --box-shadow-main: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --box-shadow-hover: 0px 4px 4px rgba(0, 0, 0, 0.65);
+}
+
+body {
+    font-size: var(--regular-text);
+    font-family: var(--userfont);
+    font-weight: 400;
+
+    background-color: $white;
+    color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/form";
+@import "blocks/search";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/information-bar";
+@import "blocks/catalog";
+@import "blocks/filter";
+@import "blocks/footer";
+@import "blocks/breadcrumb";
+@import "blocks/card";
+@import "blocks/delivery";
+@import "blocks/select";
+@import "blocks/payment";
+@import "blocks/modal";
+

@@ -1,0 +1,32 @@
+.information-bar__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 30px;
+
+    background-color: $white;
+    box-shadow: var(--box-shadow-main);
+    border-radius: 24px;
+}
+
+.information-bar__title {
+    font-size: var(--regular-text);
+    font-weight: 600;
+    line-height: 1;
+    color: $black;
+
+    b {
+        font-weight: 400;
+        color: $gray;
+    }
+}
+
+.information-bar__icon {
+    width: 42px;
+    height: 42px;
+
+    fill: $purple;
+    stroke: $purple;
+    fill-rule: "evenodd";
+    clip-rule: "evenodd";
+}
